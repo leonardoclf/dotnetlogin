@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
+import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { RegisterComponent } from './register/register.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     FormsModule,
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

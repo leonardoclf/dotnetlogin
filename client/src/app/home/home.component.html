@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container mt-5" *ngIf="(accountService.currentUser$ | async) === null">
   <div *ngIf="!registroMode" style="text-align: center">
     <h1>Faça seu registro</h1>
     <p class="lead">Faça seu registro aqui!</p>

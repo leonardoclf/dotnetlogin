@@ -12,26 +12,22 @@ export class HomeComponent implements OnInit {
   users: User[];
   registroMode: boolean;
 
-  constructor(private accountService: AccountService) { }
 
-  ngOnInit(): void {
-   // this.getUsers();
-  }
+  constructor(public accountService: AccountService) { }
 
-  // getUsers(): void {
-  //   this.accountService.getUsers().subscribe(resposta => {
-  //     this.users = resposta;
-  //     console.log(this.users);
-  //   })
-  // }
+  ngOnInit(): void {}
+
+
 
   registerToggle() {
     this.registroMode = !this.registroMode;
   }
-  
+
   cancelRegistroMode(event: boolean) {
     this.registroMode = event;
   }
+
+
 
 
 }
